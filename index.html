@@ -11,15 +11,21 @@
         width: 100px;
         height: 100px;
         background-color: red;
-        animation-name: example;
-        animation-duration: 4s;
+        animation-name: animation;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
       }
 
       @keyframes example {
-        from {background-color: red;}
-        to {background-color: yellow;}
+        0%   {background-color: red;}
+        14.28%   {background-color: orange;}
+        28.57%  {background-color: yellow;}
+        42.85%   {background-color: green;}
+        57.14%  {background-color: blue;}
+        71.42% {background-color: indigo;}
+        85.71% {background-color: violet;}
+        100% {background-color: red;}
       }
-
     </style>
     <title>
       page title here!!!
