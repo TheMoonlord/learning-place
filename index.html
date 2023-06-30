@@ -14,29 +14,47 @@
         border-radius: 15px;
         position: relative;
         animation-name: animation;
-        animation-duration: 1s;
+        animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-fill-mode: backwards;
       }
       @keyframes animation {
         0% {
-          top: 100px;
-          left: 0px;
+          top: 0px;
+          left: 100px;
           background-color: red;
         }       
-        33% {
-          top: 100px;
-          left: 100px;
-          background-color: green;
-        }
-        66% {
+        16.66% {
           top: 0px;
+          left: 100px;
+          background-color: lime;
+        }
+        33.33% {
+          top: 200px;
           left: 0px;
           background-color: blue;
         }
-        100% {
+        50% {
+          top: 300px;
+          left: 100px;
+          background-color: red;
+        }
+
+        66.66% {
+          top: 200px;
+          left: 200px;
+          background-color: lime;
+        }
+
+        83.33% {
           top: 100px;
-          left: 0px;
+          left: 200px;
+          background-color: blue;
+        }
+
+        100% {
+          top: 0px;
+          left: 100px;
           background-color: red;
         }
 
